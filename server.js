@@ -11,7 +11,7 @@ const bookingRoutes = require("./routes/bookingRoutes");
 const adminAuthRoutes = require("./routes/adminAuth");
 const adminRoutes = require("./routes/adminRoutes");
 
-
+//test
 // إعدادات عامة
 const app = express();
 app.use(express.json());      // قراءة body بصيغة JSON
