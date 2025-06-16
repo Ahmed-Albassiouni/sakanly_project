@@ -10,6 +10,12 @@ const authRoutes = require("./routes/auth");
 const bookingRoutes = require("./routes/bookingRoutes");
 const adminAuthRoutes = require("./routes/adminAuth");
 const adminRoutes = require("./routes/adminRoutes");
+const index=require("./api/index");
+
+// api/index.js
+export default function handler(req, res) {
+  res.status(200).json({ message: "Hello from API!" });
+}
 
 //test
 // إعدادات عامة
@@ -20,7 +26,6 @@ app.use(bodyParser.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // إتاحة الصور علنًا
 
 // الاتصال بـ MongoDB
-// const url="mongodb+srv://ahmedalbassiouni0:Sakanly2025@sakanlydb.xg1gehs.mongodb.net/SakanlyDB?retryWrites=true&w=majority&appName=sakanlydb"
 const url = process.env.MONGO_URI;
 mongoose.connect(url)
 .then(() => console.log("✅ Connected to MongoDB Atlas"))
@@ -41,7 +46,3 @@ app.use("/api/admin", adminRoutes);
 
 
 
-
-// تشغيل السيرفر
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

@@ -10,6 +10,7 @@
 // const bookingRoutes = require("./routes/bookingRoutes");
 // const adminAuthRoutes = require("./routes/adminAuth");
 // const adminRoutes = require("./routes/adminRoutes");
+// const index=require("./api/index");
 
 // //test
 // // إعدادات عامة
@@ -20,7 +21,6 @@
 // app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // إتاحة الصور علنًا
 
 // // الاتصال بـ MongoDB
-// // const url="mongodb+srv://ahmedalbassiouni0:Sakanly2025@sakanlydb.xg1gehs.mongodb.net/SakanlyDB?retryWrites=true&w=majority&appName=sakanlydb"
 // const url = process.env.MONGO_URI;
 // mongoose.connect(url)
 // .then(() => console.log("✅ Connected to MongoDB Atlas"))
