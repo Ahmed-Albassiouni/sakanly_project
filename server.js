@@ -10,7 +10,7 @@ const authRoutes = require("./routes/auth");
 const bookingRoutes = require("./routes/bookingRoutes");
 const adminAuthRoutes = require("./routes/adminAuth");
 const adminRoutes = require("./routes/adminRoutes");
-const index=require("./api/index");
+
 
 //test
 // إعدادات عامة
